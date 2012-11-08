@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the CA Advanced Product feature.
+ */
+
+include_once 'ca_adv_product.features.inc';
