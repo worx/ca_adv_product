@@ -1316,14 +1316,17 @@ function ca_adv_product_views_default_views() {
   $handler->display->display_options['row_plugin'] = 'fields';
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['relationships'] = FALSE;
-  /* Relationship: Entity Reference: Referencing entity */
-  $handler->display->display_options['relationships']['reverse_field_ca_ad_prod_parent_category_node']['id'] = 'reverse_field_ca_ad_prod_parent_category_node';
-  $handler->display->display_options['relationships']['reverse_field_ca_ad_prod_parent_category_node']['table'] = 'node';
-  $handler->display->display_options['relationships']['reverse_field_ca_ad_prod_parent_category_node']['field'] = 'reverse_field_ca_ad_prod_parent_category_node';
   /* Relationship: Entity Reference: Referenced Entity */
   $handler->display->display_options['relationships']['field_ca_ad_prod_parent_category_target_id']['id'] = 'field_ca_ad_prod_parent_category_target_id';
   $handler->display->display_options['relationships']['field_ca_ad_prod_parent_category_target_id']['table'] = 'field_data_field_ca_ad_prod_parent_category';
   $handler->display->display_options['relationships']['field_ca_ad_prod_parent_category_target_id']['field'] = 'field_ca_ad_prod_parent_category_target_id';
+  $handler->display->display_options['relationships']['field_ca_ad_prod_parent_category_target_id']['label'] = 'Category';
+  /* Relationship: Entity Reference: Referencing entity */
+  $handler->display->display_options['relationships']['reverse_field_ca_ad_prod_parent_category_node']['id'] = 'reverse_field_ca_ad_prod_parent_category_node';
+  $handler->display->display_options['relationships']['reverse_field_ca_ad_prod_parent_category_node']['table'] = 'node';
+  $handler->display->display_options['relationships']['reverse_field_ca_ad_prod_parent_category_node']['field'] = 'reverse_field_ca_ad_prod_parent_category_node';
+  $handler->display->display_options['relationships']['reverse_field_ca_ad_prod_parent_category_node']['relationship'] = 'field_ca_ad_prod_parent_category_target_id';
+  $handler->display->display_options['relationships']['reverse_field_ca_ad_prod_parent_category_node']['label'] = 'product';
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
@@ -1362,24 +1365,16 @@ function ca_adv_product_views_default_views() {
   $handler->display->display_options['fields']['nothing']['label'] = '';
   $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
   $handler->display->display_options['defaults']['arguments'] = FALSE;
-  /* Contextual filter: Content: Parent Category (field_ca_ad_prod_parent_category) */
-  $handler->display->display_options['arguments']['field_ca_ad_prod_parent_category_target_id_1']['id'] = 'field_ca_ad_prod_parent_category_target_id_1';
-  $handler->display->display_options['arguments']['field_ca_ad_prod_parent_category_target_id_1']['table'] = 'field_data_field_ca_ad_prod_parent_category';
-  $handler->display->display_options['arguments']['field_ca_ad_prod_parent_category_target_id_1']['field'] = 'field_ca_ad_prod_parent_category_target_id';
-  $handler->display->display_options['arguments']['field_ca_ad_prod_parent_category_target_id_1']['default_action'] = 'default';
-  $handler->display->display_options['arguments']['field_ca_ad_prod_parent_category_target_id_1']['title_enable'] = TRUE;
-  $handler->display->display_options['arguments']['field_ca_ad_prod_parent_category_target_id_1']['title'] = '%1';
-  $handler->display->display_options['arguments']['field_ca_ad_prod_parent_category_target_id_1']['default_argument_type'] = 'node';
-  $handler->display->display_options['arguments']['field_ca_ad_prod_parent_category_target_id_1']['summary']['number_of_records'] = '0';
-  $handler->display->display_options['arguments']['field_ca_ad_prod_parent_category_target_id_1']['summary']['format'] = 'default_summary';
-  $handler->display->display_options['arguments']['field_ca_ad_prod_parent_category_target_id_1']['summary_options']['items_per_page'] = '25';
-  $handler->display->display_options['arguments']['field_ca_ad_prod_parent_category_target_id_1']['specify_validation'] = TRUE;
-  $handler->display->display_options['arguments']['field_ca_ad_prod_parent_category_target_id_1']['validate']['type'] = 'node';
-  $handler->display->display_options['arguments']['field_ca_ad_prod_parent_category_target_id_1']['validate_options']['types'] = array(
-    'ca_adv_product_category' => 'ca_adv_product_category',
-  );
-  $handler->display->display_options['arguments']['field_ca_ad_prod_parent_category_target_id_1']['validate']['fail'] = 'summary';
-  $handler->display->display_options['arguments']['field_ca_ad_prod_parent_category_target_id_1']['break_phrase'] = TRUE;
+  /* Contextual filter: Content: Nid */
+  $handler->display->display_options['arguments']['nid']['id'] = 'nid';
+  $handler->display->display_options['arguments']['nid']['table'] = 'node';
+  $handler->display->display_options['arguments']['nid']['field'] = 'nid';
+  $handler->display->display_options['arguments']['nid']['relationship'] = 'reverse_field_ca_ad_prod_parent_category_node';
+  $handler->display->display_options['arguments']['nid']['default_action'] = 'default';
+  $handler->display->display_options['arguments']['nid']['default_argument_type'] = 'node';
+  $handler->display->display_options['arguments']['nid']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['nid']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['nid']['summary_options']['items_per_page'] = '25';
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
   /* Filter criterion: Content: Published */
