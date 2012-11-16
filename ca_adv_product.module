@@ -11,7 +11,7 @@ include_once('ca_adv_product.features.inc');
  */
 function ca_adv_product_menu() {
   $items['admin/config/worx_features/adv_product'] = array(
-    'title' => 'Events Configuration',
+    'title' => 'Advanced Product Configuration',
     'description' => 'Override settings for ca_adv_product',
     'page callback' => 'drupal_get_form',
     'page arguments' => array('ca_adv_product_settings_form'),
@@ -38,7 +38,7 @@ function ca_adv_product_menu() {
  * implements hook_menu_alter().
  */
 function ca_adv_product_menu_alter(&$items) {
-  $items['adv_product']['title'] = variable_get('ca_adv_product_menu_title', 'Events');
+  $items['adv_product']['title'] = variable_get('ca_adv_product_menu_title', 'Advanced Product');
 }
 
 /**
@@ -46,7 +46,7 @@ function ca_adv_product_menu_alter(&$items) {
  */
 function ca_adv_product_panels_pre_render($panel, $renderer) {
   if (isset($panel->content['new-6']) && $panel->content['new-6']->subtype == 'ca_adv_product-ca_adv_product_list_1') {
-    $panel->title = variable_get('ca_adv_product_panel_title', 'Events');
+    $panel->title = variable_get('ca_adv_product_panel_title', 'Advanced Product');
   }
 }
 
