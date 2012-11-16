@@ -4,4 +4,69 @@
  * Code for the CA Advanced Product feature.
  */
 
-include_once 'ca_adv_product.features.inc';
+include_once('ca_adv_product.features.inc');
+
+/**
+ * Implements hook_menu()
+ */
+function ca_adv_product_menu() {
+  $items['admin/config/worx_features/adv_product'] = array(
+    'title' => 'Events Configuration',
+    'description' => 'Override settings for ca_adv_product',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('ca_adv_product_settings_form'),
+    'access arguments' => array('worx features admin'),
+    'file' => 'ca_adv_product.admin.inc',
+    'file path' => drupal_get_path('module', 'ca_adv_product'),
+    'type' => MENU_NORMAL_ITEM,
+  );
+  $items['admin/config/worx_features/adv_product/general'] = array(
+    'title' => 'General Settings',
+    'description' => 'Override settings for ca_adv_product',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('ca_adv_product_settings_form'),
+    'access arguments' => array('worx features admin'),
+    'file' => 'ca_adv_product.admin.inc',
+    'file path' => drupal_get_path('module', 'ca_adv_product'),
+    'type' => MENU_DEFAULT_LOCAL_TASK,
+  );
+  
+  return $items;
+}
+
+/**
+ * implements hook_menu_alter().
+ */
+function ca_adv_product_menu_alter(&$items) {
+  $items['adv_product']['title'] = variable_get('ca_adv_product_menu_title', 'Events');
+}
+
+/**
+ * Implements hook_panels_pre_render().
+ */
+function ca_adv_product_panels_pre_render($panel, $renderer) {
+  if (isset($panel->content['new-6']) && $panel->content['new-6']->subtype == 'ca_adv_product-ca_adv_product_list_1') {
+    $panel->title = variable_get('ca_adv_product_panel_title', 'Events');
+  }
+}
+
+/**
+ * Implements hook_views_pre_render().
+ */
+function ca_adv_product_views_pre_view(&$view, &$display_id, &$args) {
+  if ($display_id == 'ca_adv_product_list_1') {
+    $view->set_items_per_page(variable_get('ca_adv_product_list_count', 5));
+  }
+  elseif ($display_id == 'ca_adv_product_block_1') {
+    $view->set_items_per_page(variable_get('ca_adv_product_block_count', 1));
+  }
+}
+
+/**
+* Implementation of hook_ctools_plugin_directory()
+*/
+function ca_adv_product_ctools_plugin_directory($owner, $plugin_type) {
+  if ($owner == 'ctools') {
+    return 'plugins/' . $plugin_type;;
+  }
+}
