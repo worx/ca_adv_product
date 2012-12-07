@@ -596,7 +596,7 @@ function ca_adv_product_default_page_manager_pages() {
   $page->task = 'page';
   $page->admin_title = 'CA Advanced Product: Category Admin';
   $page->admin_description = '';
-  $page->path = 'product/admin/administration';
+  $page->path = 'product/admin/adv-product-administration';
   $page->access = array(
     'plugins' => array(
       0 => array(
@@ -792,7 +792,7 @@ function ca_adv_product_default_page_manager_pages() {
   $page->task = 'page';
   $page->admin_title = 'CA Advanced Product: Products Administration';
   $page->admin_description = '';
-  $page->path = 'node/%node/admin/administration';
+  $page->path = 'node/%node/admin/adv-product-administration';
   $page->access = array(
     'plugins' => array(
       0 => array(
