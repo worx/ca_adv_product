@@ -4,10 +4,10 @@
 .pane-ca-adv-product-ca-adv-product-sub-cat-list-one .views-field-title { text-align: center; }
 .pane-ca-adv-product-ca-adv-product-product-list-1 .views-field-field-ca-adv-product-image { float: left; padding: 0 15px 15px 0; }
 .pane-ca-adv-product-ca-adv-product-product-list-1 .views-field-nothing { clear: both; }
-.pane-ca-adv-product-ca-adv-product-node-1 .views-field-field-ca-adv-product- { float: right; padding: 0 0 15px 15px; }
-.pane-ca-adv-product-ca-adv-product-node-1 .views-field-field-ca-adv-product-image { float: left; padding: 0 15px 5px 0; }
-.pane-ca-adv-product-ca-adv-product-node-1 .views-field-field-ca-adv-product-image-1 { clear: left; width: 200px; float: left; padding: 0 15px 15px 0; }
+.pane-ca-advanced-products-node-ca-adv-product-node-1a { float: left; padding: 0 15px 5px 0; }
+.pane-ca-advanced-products-node-ca-adv-product-node-1b { clear: left; width: 200px; float: left; padding: 0 15px 5px 0; }
 .pane-ca-adv-product-ca-adv-product-node-1 .views-field-field-ca-adv-product-video {margin-bottom: 10px;}
+.pane-addtoany-addtoany-button {text-align: right;}
 
 .pane-ca-adv-product-ca-adv-category-options-list-1 .ui-accordion .ui-accordion-header a {padding: 5px;}
 .pane-ca-adv-product-ca-adv-category-options-list-1 .ui-accordion-icons .ui-accordion-header a {padding-left: 2.2em;}

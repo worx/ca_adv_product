@@ -62,6 +62,7 @@ function ca_adv_product_default_page_manager_handlers() {
         'width_type' => '%',
         'children' => array(
           0 => 'main-row',
+          1 => 2,
         ),
         'parent' => 'canvas',
       ),
@@ -90,6 +91,23 @@ function ca_adv_product_default_page_manager_handlers() {
         'parent' => 'main-row',
         'class' => '',
       ),
+      2 => array(
+        'type' => 'row',
+        'contains' => 'region',
+        'children' => array(
+          0 => 'video_section_',
+        ),
+        'parent' => 'main',
+        'class' => '',
+      ),
+      'video_section_' => array(
+        'type' => 'region',
+        'title' => 'Video Section',
+        'width' => 100,
+        'width_type' => '%',
+        'parent' => '2',
+        'class' => '',
+      ),
     ),
   );
   $display->panel_settings = array(
@@ -98,6 +116,8 @@ function ca_adv_product_default_page_manager_handlers() {
       'middle' => NULL,
       'first_right' => NULL,
       'first_left' => NULL,
+      'video_section' => NULL,
+      'video_section_' => NULL,
     ),
   );
   $display->cache = array();
@@ -108,7 +128,7 @@ function ca_adv_product_default_page_manager_handlers() {
     $pane->pid = 'new-1';
     $pane->panel = 'first_left';
     $pane->type = 'views_panes';
-    $pane->subtype = 'ca_adv_product-ca_adv_product_node_1';
+    $pane->subtype = 'ca_advanced_products_node-ca_adv_product_node_1a';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array();
@@ -124,9 +144,76 @@ function ca_adv_product_default_page_manager_handlers() {
     $display->panels['first_left'][0] = 'new-1';
     $pane = new stdClass();
     $pane->pid = 'new-2';
+    $pane->panel = 'first_left';
+    $pane->type = 'views_panes';
+    $pane->subtype = 'ca_advanced_products_node-ca_adv_product_node_1b';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array();
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 1;
+    $pane->locks = array();
+    $display->content['new-2'] = $pane;
+    $display->panels['first_left'][1] = 'new-2';
+    $pane = new stdClass();
+    $pane->pid = 'new-3';
+    $pane->panel = 'first_left';
+    $pane->type = 'entity_field';
+    $pane->subtype = 'node:body';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'label' => 'hidden',
+      'formatter' => 'text_default',
+      'delta_limit' => 0,
+      'delta_offset' => '0',
+      'delta_reversed' => FALSE,
+      'formatter_settings' => array(),
+      'context' => 'argument_entity_id:node_1',
+      'override_title' => 0,
+      'override_title_text' => '',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 2;
+    $pane->locks = array();
+    $display->content['new-3'] = $pane;
+    $display->panels['first_left'][2] = 'new-3';
+    $pane = new stdClass();
+    $pane->pid = 'new-4';
+    $pane->panel = 'first_left';
+    $pane->type = 'block';
+    $pane->subtype = 'addtoany-addtoany_button';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'override_title' => 1,
+      'override_title_text' => '<none>',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 3;
+    $pane->locks = array();
+    $display->content['new-4'] = $pane;
+    $display->panels['first_left'][3] = 'new-4';
+    $pane = new stdClass();
+    $pane->pid = 'new-5';
     $pane->panel = 'first_right';
     $pane->type = 'views_panes';
-    $pane->subtype = 'ca_adv_product-ca_adv_prod_cat_options_list_1';
+    $pane->subtype = 'ca_advanced_products_list-ca_adv_prod_cat_options_list_1';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array();
@@ -138,10 +225,28 @@ function ca_adv_product_default_page_manager_handlers() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-2'] = $pane;
-    $display->panels['first_right'][0] = 'new-2';
+    $display->content['new-5'] = $pane;
+    $display->panels['first_right'][0] = 'new-5';
+    $pane = new stdClass();
+    $pane->pid = 'new-6';
+    $pane->panel = 'video_section_';
+    $pane->type = 'views_panes';
+    $pane->subtype = 'ca_advanced_products_node-ca_adv_product_node_video_1';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array();
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $display->content['new-6'] = $pane;
+    $display->panels['video_section_'][0] = 'new-6';
   $display->hide_title = PANELS_TITLE_FIXED;
-  $display->title_pane = 'new-1';
+  $display->title_pane = '0';
   $handler->conf['display'] = $display;
   $export['ca_adv_product_node_view_panel_context'] = $handler;
 
@@ -263,7 +368,7 @@ function ca_adv_product_default_page_manager_handlers() {
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();
-    $pane->pid = 'new-3';
+    $pane->pid = 'new-7';
     $pane->panel = 'center';
     $pane->type = 'entity_field';
     $pane->subtype = 'node:body';
@@ -288,13 +393,13 @@ function ca_adv_product_default_page_manager_handlers() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-3'] = $pane;
-    $display->panels['center'][0] = 'new-3';
+    $display->content['new-7'] = $pane;
+    $display->panels['center'][0] = 'new-7';
     $pane = new stdClass();
-    $pane->pid = 'new-4';
+    $pane->pid = 'new-8';
     $pane->panel = 'center';
     $pane->type = 'views_panes';
-    $pane->subtype = 'ca_adv_product-ca_adv_product_sub_cat_list_one';
+    $pane->subtype = 'ca_advanced_products_list-ca_adv_product_sub_cat_list_one';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array();
@@ -306,13 +411,13 @@ function ca_adv_product_default_page_manager_handlers() {
     $pane->extras = array();
     $pane->position = 1;
     $pane->locks = array();
-    $display->content['new-4'] = $pane;
-    $display->panels['center'][1] = 'new-4';
+    $display->content['new-8'] = $pane;
+    $display->panels['center'][1] = 'new-8';
     $pane = new stdClass();
-    $pane->pid = 'new-5';
+    $pane->pid = 'new-9';
     $pane->panel = 'second_left';
     $pane->type = 'views_panes';
-    $pane->subtype = 'ca_adv_product-ca_adv_product_product_list_1';
+    $pane->subtype = 'ca_advanced_products_list-ca_adv_product_product_list_1';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array();
@@ -324,13 +429,13 @@ function ca_adv_product_default_page_manager_handlers() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-5'] = $pane;
-    $display->panels['second_left'][0] = 'new-5';
+    $display->content['new-9'] = $pane;
+    $display->panels['second_left'][0] = 'new-9';
     $pane = new stdClass();
-    $pane->pid = 'new-6';
+    $pane->pid = 'new-10';
     $pane->panel = 'second_right';
     $pane->type = 'views_panes';
-    $pane->subtype = 'ca_adv_product-ca_adv_category_options_list_1';
+    $pane->subtype = 'ca_advanced_products_list-ca_adv_category_options_list_1';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array();
@@ -342,8 +447,8 @@ function ca_adv_product_default_page_manager_handlers() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-6'] = $pane;
-    $display->panels['second_right'][0] = 'new-6';
+    $display->content['new-10'] = $pane;
+    $display->panels['second_right'][0] = 'new-10';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
@@ -372,7 +477,7 @@ function ca_adv_product_default_page_manager_pages() {
           'rids' => array(
             0 => 3,
             1 => 4,
-            2 => 212478245,
+            2 => 60140418,
           ),
         ),
         'context' => 'logged-in-user',
@@ -437,7 +542,7 @@ function ca_adv_product_default_page_manager_pages() {
           'rids' => array(
             0 => 3,
             1 => 4,
-            2 => 212478245,
+            2 => 60140418,
           ),
         ),
         'context' => 'logged-in-user',
@@ -532,7 +637,7 @@ function ca_adv_product_default_page_manager_pages() {
           'rids' => array(
             0 => 3,
             1 => 4,
-            2 => 212478245,
+            2 => 60140418,
           ),
         ),
         'context' => 'logged-in-user',
@@ -605,7 +710,7 @@ function ca_adv_product_default_page_manager_pages() {
           'rids' => array(
             0 => 3,
             1 => 4,
-            2 => 212478245,
+            2 => 60140418,
           ),
         ),
         'context' => 'logged-in-user',
@@ -667,7 +772,7 @@ function ca_adv_product_default_page_manager_pages() {
     $pane->pid = 'new-1';
     $pane->panel = 'middle';
     $pane->type = 'views_panes';
-    $pane->subtype = 'ca_adv_product-ca_adv_product_category_admin';
+    $pane->subtype = 'ca_advanced_products_admin-ca_adv_product_category_admin';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array();
@@ -682,7 +787,7 @@ function ca_adv_product_default_page_manager_pages() {
     $display->content['new-1'] = $pane;
     $display->panels['middle'][0] = 'new-1';
   $display->hide_title = PANELS_TITLE_FIXED;
-  $display->title_pane = 'new-1';
+  $display->title_pane = '0';
   $handler->conf['display'] = $display;
   $page->default_handlers[$handler->name] = $handler;
   $pages['ca_adv_product_category_admin'] = $page;
@@ -703,7 +808,7 @@ function ca_adv_product_default_page_manager_pages() {
           'rids' => array(
             0 => 3,
             1 => 4,
-            2 => 212478245,
+            2 => 60140418,
           ),
         ),
         'context' => 'logged-in-user',
@@ -801,7 +906,7 @@ function ca_adv_product_default_page_manager_pages() {
           'rids' => array(
             0 => 3,
             1 => 4,
-            2 => 9606690,
+            2 => 60140418,
           ),
         ),
         'context' => 'logged-in-user',
@@ -880,7 +985,7 @@ function ca_adv_product_default_page_manager_pages() {
     $pane->pid = 'new-3';
     $pane->panel = 'middle';
     $pane->type = 'views_panes';
-    $pane->subtype = 'ca_adv_product-ca_adv_product_sub_cat_admin';
+    $pane->subtype = 'ca_advanced_products_admin-ca_adv_product_sub_cat_admin';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array();
@@ -898,7 +1003,7 @@ function ca_adv_product_default_page_manager_pages() {
     $pane->pid = 'new-4';
     $pane->panel = 'middle';
     $pane->type = 'views_panes';
-    $pane->subtype = 'ca_adv_product-ca_adv_product_product_admin';
+    $pane->subtype = 'ca_advanced_products_admin-ca_adv_product_product_admin';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array();
@@ -916,7 +1021,7 @@ function ca_adv_product_default_page_manager_pages() {
     $pane->pid = 'new-5';
     $pane->panel = 'middle';
     $pane->type = 'views_panes';
-    $pane->subtype = 'ca_adv_product-ca_adv_product_options_admin';
+    $pane->subtype = 'ca_advanced_products_admin-ca_adv_product_options_admin';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array();
@@ -931,7 +1036,7 @@ function ca_adv_product_default_page_manager_pages() {
     $display->content['new-5'] = $pane;
     $display->panels['middle'][2] = 'new-5';
   $display->hide_title = PANELS_TITLE_FIXED;
-  $display->title_pane = 'new-4';
+  $display->title_pane = '0';
   $handler->conf['display'] = $display;
   $page->default_handlers[$handler->name] = $handler;
   $pages['ca_adv_product_product_administration'] = $page;
@@ -998,7 +1103,7 @@ function ca_adv_product_default_page_manager_pages() {
     $pane->pid = 'new-6';
     $pane->panel = 'middle';
     $pane->type = 'views_panes';
-    $pane->subtype = 'ca_adv_product-ca_adv_product_category_list_1';
+    $pane->subtype = 'ca_advanced_products_list-ca_adv_product_category_list_1';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array();
@@ -1034,7 +1139,7 @@ function ca_adv_product_default_page_manager_pages() {
           'rids' => array(
             0 => 3,
             1 => 4,
-            2 => 212478245,
+            2 => 60140418,
           ),
         ),
         'context' => 'logged-in-user',
@@ -1149,7 +1254,7 @@ function ca_adv_product_default_page_manager_pages() {
           'rids' => array(
             0 => 3,
             1 => 4,
-            2 => 212478245,
+            2 => 60140418,
           ),
         ),
         'context' => 'logged-in-user',
@@ -1264,7 +1369,7 @@ function ca_adv_product_default_page_manager_pages() {
           'rids' => array(
             0 => 3,
             1 => 4,
-            2 => 9606690,
+            2 => 60140418,
           ),
         ),
         'context' => 'logged-in-user',
@@ -1348,7 +1453,7 @@ function ca_adv_product_default_page_manager_pages() {
           'rids' => array(
             0 => 3,
             1 => 4,
-            2 => 9606690,
+            2 => 60140418,
           ),
         ),
         'context' => 'logged-in-user',

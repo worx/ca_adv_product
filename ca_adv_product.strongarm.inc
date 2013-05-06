@@ -381,7 +381,7 @@ function ca_adv_product_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'weight_enabled_ca_adv_product_option';
-  $strongarm->value = '0';
+  $strongarm->value = '1';
   $export['weight_enabled_ca_adv_product_option'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -409,22 +409,52 @@ function ca_adv_product_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'weight_range_ca_adv_product';
-  $strongarm->value = '50';
+  $strongarm->value = '100';
   $export['weight_range_ca_adv_product'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'weight_range_ca_adv_product_category';
-  $strongarm->value = '20';
+  $strongarm->value = '100';
   $export['weight_range_ca_adv_product_category'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'weight_range_ca_adv_product_option';
-  $strongarm->value = '20';
+  $strongarm->value = '100';
   $export['weight_range_ca_adv_product_option'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'xmlsitemap_settings_node_ca_adv_product';
+  $strongarm->value = array(
+    'status' => '1',
+    'priority' => '0.7',
+  );
+  $export['xmlsitemap_settings_node_ca_adv_product'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'xmlsitemap_settings_node_ca_adv_product_category';
+  $strongarm->value = array(
+    'status' => '1',
+    'priority' => '0.6',
+  );
+  $export['xmlsitemap_settings_node_ca_adv_product_category'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'xmlsitemap_settings_node_ca_adv_product_option';
+  $strongarm->value = array(
+    'status' => '1',
+    'priority' => '0.6',
+  );
+  $export['xmlsitemap_settings_node_ca_adv_product_option'] = $strongarm;
 
   return $export;
 }
