@@ -14,9 +14,9 @@ function ca_adv_product_user_default_permissions() {
   $permissions['create ca_adv_product content'] = array(
     'name' => 'create ca_adv_product content',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'advance product admin',
-      2 => 'webmaster',
+      'administrator => 'administrator',
+      'advance product admin => 'advance product admin',
+      'webmaster' => 'webmaster',
     ),
     'module' => 'node',
   );
@@ -25,9 +25,9 @@ function ca_adv_product_user_default_permissions() {
   $permissions['create ca_adv_product_category content'] = array(
     'name' => 'create ca_adv_product_category content',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'advance product admin',
-      2 => 'webmaster',
+      'administrator => 'administrator',
+      'advance product admin => 'advance product admin',
+      'webmaster' => 'webmaster',
     ),
     'module' => 'node',
   );
@@ -36,9 +36,9 @@ function ca_adv_product_user_default_permissions() {
   $permissions['create ca_adv_product_option content'] = array(
     'name' => 'create ca_adv_product_option content',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'advance product admin',
-      2 => 'webmaster',
+      'administrator => 'administrator',
+      'advance product admin => 'advance product admin',
+      'webmaster' => 'webmaster',
     ),
     'module' => 'node',
   );
@@ -47,9 +47,9 @@ function ca_adv_product_user_default_permissions() {
   $permissions['delete any ca_adv_product content'] = array(
     'name' => 'delete any ca_adv_product content',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'advance product admin',
-      2 => 'webmaster',
+      'administrator => 'administrator',
+      'advance product admin => 'advance product admin',
+      'webmaster' => 'webmaster',
     ),
     'module' => 'node',
   );
@@ -58,9 +58,9 @@ function ca_adv_product_user_default_permissions() {
   $permissions['delete any ca_adv_product_category content'] = array(
     'name' => 'delete any ca_adv_product_category content',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'advance product admin',
-      2 => 'webmaster',
+      'administrator => 'administrator',
+      'advance product admin => 'advance product admin',
+      'webmaster' => 'webmaster',
     ),
     'module' => 'node',
   );
@@ -69,9 +69,9 @@ function ca_adv_product_user_default_permissions() {
   $permissions['delete any ca_adv_product_option content'] = array(
     'name' => 'delete any ca_adv_product_option content',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'advance product admin',
-      2 => 'webmaster',
+      'administrator => 'administrator',
+      'advance product admin => 'advance product admin',
+      'webmaster' => 'webmaster',
     ),
     'module' => 'node',
   );
@@ -80,9 +80,9 @@ function ca_adv_product_user_default_permissions() {
   $permissions['delete own ca_adv_product content'] = array(
     'name' => 'delete own ca_adv_product content',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'advance product admin',
-      2 => 'webmaster',
+      'administrator => 'administrator',
+      'advance product admin => 'advance product admin',
+      'webmaster' => 'webmaster',
     ),
     'module' => 'node',
   );
@@ -91,9 +91,9 @@ function ca_adv_product_user_default_permissions() {
   $permissions['delete own ca_adv_product_category content'] = array(
     'name' => 'delete own ca_adv_product_category content',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'advance product admin',
-      2 => 'webmaster',
+      'administrator => 'administrator',
+      'advance product admin => 'advance product admin',
+      'webmaster' => 'webmaster',
     ),
     'module' => 'node',
   );
@@ -102,9 +102,9 @@ function ca_adv_product_user_default_permissions() {
   $permissions['delete own ca_adv_product_option content'] = array(
     'name' => 'delete own ca_adv_product_option content',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'advance product admin',
-      2 => 'webmaster',
+      'administrator => 'administrator',
+      'advance product admin => 'advance product admin',
+      'webmaster' => 'webmaster',
     ),
     'module' => 'node',
   );
@@ -113,9 +113,9 @@ function ca_adv_product_user_default_permissions() {
   $permissions['edit any ca_adv_product content'] = array(
     'name' => 'edit any ca_adv_product content',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'advance product admin',
-      2 => 'webmaster',
+      'administrator => 'administrator',
+      'advance product admin => 'advance product admin',
+      'webmaster' => 'webmaster',
     ),
     'module' => 'node',
   );
@@ -124,9 +124,9 @@ function ca_adv_product_user_default_permissions() {
   $permissions['edit any ca_adv_product_category content'] = array(
     'name' => 'edit any ca_adv_product_category content',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'advance product admin',
-      2 => 'webmaster',
+      'administrator => 'administrator',
+      'advance product admin => 'advance product admin',
+      'webmaster' => 'webmaster',
     ),
     'module' => 'node',
   );
@@ -135,9 +135,9 @@ function ca_adv_product_user_default_permissions() {
   $permissions['edit any ca_adv_product_option content'] = array(
     'name' => 'edit any ca_adv_product_option content',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'advance product admin',
-      2 => 'webmaster',
+      'administrator => 'administrator',
+      'advance product admin => 'advance product admin',
+      'webmaster' => 'webmaster',
     ),
     'module' => 'node',
   );
@@ -146,9 +146,9 @@ function ca_adv_product_user_default_permissions() {
   $permissions['edit own ca_adv_product content'] = array(
     'name' => 'edit own ca_adv_product content',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'advance product admin',
-      2 => 'webmaster',
+      'administrator => 'administrator',
+      'advance product admin => 'advance product admin',
+      'webmaster' => 'webmaster',
     ),
     'module' => 'node',
   );
@@ -157,9 +157,9 @@ function ca_adv_product_user_default_permissions() {
   $permissions['edit own ca_adv_product_category content'] = array(
     'name' => 'edit own ca_adv_product_category content',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'advance product admin',
-      2 => 'webmaster',
+      'administrator => 'administrator',
+      'advance product admin => 'advance product admin',
+      'webmaster' => 'webmaster',
     ),
     'module' => 'node',
   );
@@ -168,9 +168,9 @@ function ca_adv_product_user_default_permissions() {
   $permissions['edit own ca_adv_product_option content'] = array(
     'name' => 'edit own ca_adv_product_option content',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'advance product admin',
-      2 => 'webmaster',
+      'administrator => 'administrator',
+      'advance product admin => 'advance product admin',
+      'webmaster' => 'webmaster',
     ),
     'module' => 'node',
   );
