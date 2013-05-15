@@ -15,7 +15,7 @@ function ca_adv_product_install() {
     'private_pid' => 2,
   );
 
-  $imce_roles_profiles[212478245] = $imce_roles_profiles_vaule;
+  $imce_roles_profiles[60140418] = $imce_roles_profiles_vaule;
 
   variable_set('imce_roles_profiles', $imce_roles_profiles);
 }
