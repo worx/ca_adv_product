@@ -684,11 +684,11 @@ function ca_adv_product_default_page_manager_pages() {
     'css' => '',
     'contexts' => array(),
     'relationships' => array(),
-    'context_admin_options' => 'entityref_create_node:ca_adv_product_category:field_ca_category_parent',
+    'context_admin_options' => 'entityref_create_node:ca_adv_product_category:field_ca_adv_category_parent',
     'context_admin_options_items' => 'ca_adv_product_category',
     'context_admin_use_node_edit' => 0,
     'submitted_context' => 'argument_entity_id:node_1',
-    'context_admin_field' => 'field_ca_category_parent',
+    'context_admin_field' => 'field_ca_adv_category_parent',
     'context_admin_custom_redirect' => '',
   );
   $page->default_handlers[$handler->name] = $handler;

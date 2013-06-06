@@ -175,13 +175,13 @@ function ca_adv_product_field_default_field_bases() {
     'type' => 'file',
   );
 
-  // Exported field_base: 'field_ca_category_parent'
-  $field_bases['field_ca_category_parent'] = array(
+  // Exported field_base: 'field_ca_adv_category_parent'
+  $field_bases['field_ca_adv_category_parent'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_ca_category_parent',
+    'field_name' => 'field_ca_adv_category_parent',
     'foreign keys' => array(
       'node' => array(
         'columns' => array(

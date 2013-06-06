@@ -493,14 +493,14 @@ function ca_adv_product_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-ca_adv_product_category-field_ca_category_parent'.
-  $fields['node-ca_adv_product_category-field_ca_category_parent'] = array(
+  // Exported field: 'node-ca_adv_product_category-field_ca_adv_category_parent'.
+  $fields['node-ca_adv_product_category-field_ca_adv_category_parent'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_ca_category_parent',
+      'field_name' => 'field_ca_adv_category_parent',
       'foreign keys' => array(
         'node' => array(
           'columns' => array(
@@ -563,7 +563,7 @@ function ca_adv_product_field_default_fields() {
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_ca_category_parent',
+      'field_name' => 'field_ca_adv_category_parent',
       'label' => 'Parent Category',
       'required' => 0,
       'settings' => array(
