@@ -1096,7 +1096,7 @@ function ca_adv_product_default_page_manager_pages() {
     ),
   );
   $display->cache = array();
-  $display->title = 'Products';
+  $display->title = '';
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();

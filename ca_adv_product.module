@@ -38,15 +38,17 @@ function ca_adv_product_menu() {
  * implements hook_menu_alter().
  */
 function ca_adv_product_menu_alter(&$items) {
-  $items['adv_product']['title'] = variable_get('ca_adv_product_menu_title', 'Advanced Product');
+  $items['product']['title'] = variable_get('ca_adv_product_menu_title', 'Products');
 }
 
 /**
  * Implements hook_panels_pre_render().
  */
 function ca_adv_product_panels_pre_render($panel, $renderer) {
-  if (isset($panel->content['new-6']) && $panel->content['new-6']->subtype == 'ca_adv_product-ca_adv_product_list_1') {
-    $panel->title = variable_get('ca_adv_product_panel_title', 'Advanced Product');
+  foreach ($panel->content as $key => $value) {
+    if ($value->subtype == 'ca_advanced_products_list-ca_adv_product_category_list_1') {
+      $panel->title = variable_get('ca_adv_product_panel_title', 'Products');
+    }
   }
 }
 
