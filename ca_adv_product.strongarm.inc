@@ -289,27 +289,6 @@ function ca_adv_product_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'pathauto_node_ca_adv_product_category_pattern';
-  $strongarm->value = 'product/[node:field_ca_adv_category_parent]/[node:title]';
-  $export['pathauto_node_ca_adv_product_category_pattern'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'pathauto_node_ca_adv_product_option_pattern';
-  $strongarm->value = 'product/[node:field_ca_ad_prod_parent_category]/[node:title]';
-  $export['pathauto_node_ca_adv_product_option_pattern'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'pathauto_node_ca_adv_product_pattern';
-  $strongarm->value = 'product/[node:field_ca_ad_prod_parent_category]/[node:title]';
-  $export['pathauto_node_ca_adv_product_pattern'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
   $strongarm->name = 'save_continue_ca_adv_product_option';
   $strongarm->value = 'Save and add fields';
   $export['save_continue_ca_adv_product_option'] = $strongarm;

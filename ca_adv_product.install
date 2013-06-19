@@ -18,4 +18,11 @@ function ca_adv_product_install() {
   $imce_roles_profiles[60140418] = $imce_roles_profiles_vaule;
 
   variable_set('imce_roles_profiles', $imce_roles_profiles);
+	
+  // Set the Pathauto for the node.
+  variable_set('pathauto_node_ca_adv_product_category_pattern', 'product/[node:field_ca_adv_category_parent]/[node:title]');
+
+  variable_set('pathauto_node_ca_adv_product_option_pattern', 'product/[node:field_ca_ad_prod_parent_category]/[node:title]');
+
+  variable_set('pathauto_node_ca_adv_product_pattern', 'product/[node:field_ca_ad_prod_parent_category]/[node:title]');
 }
