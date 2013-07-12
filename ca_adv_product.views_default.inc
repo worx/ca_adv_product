@@ -597,6 +597,8 @@ function ca_adv_product_views_default_views() {
   $handler->display->display_options['fields']['field_ca_ad_prod_category_image']['field'] = 'field_ca_ad_prod_category_image';
   $handler->display->display_options['fields']['field_ca_ad_prod_category_image']['label'] = '';
   $handler->display->display_options['fields']['field_ca_ad_prod_category_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_ca_ad_prod_category_image']['hide_empty'] = TRUE;
+  $handler->display->display_options['fields']['field_ca_ad_prod_category_image']['empty_zero'] = TRUE;
   $handler->display->display_options['fields']['field_ca_ad_prod_category_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_ca_ad_prod_category_image']['settings'] = array(
     'image_style' => 'default',
@@ -657,6 +659,8 @@ function ca_adv_product_views_default_views() {
   $handler->display->display_options['fields']['field_ca_ad_prod_category_image']['field'] = 'field_ca_ad_prod_category_image';
   $handler->display->display_options['fields']['field_ca_ad_prod_category_image']['label'] = '';
   $handler->display->display_options['fields']['field_ca_ad_prod_category_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_ca_ad_prod_category_image']['hide_empty'] = TRUE;
+  $handler->display->display_options['fields']['field_ca_ad_prod_category_image']['empty_zero'] = TRUE;
   $handler->display->display_options['fields']['field_ca_ad_prod_category_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_ca_ad_prod_category_image']['settings'] = array(
     'image_style' => 'default',
@@ -720,6 +724,8 @@ function ca_adv_product_views_default_views() {
   $handler->display->display_options['fields']['field_ca_adv_product_image']['field'] = 'field_ca_adv_product_image';
   $handler->display->display_options['fields']['field_ca_adv_product_image']['label'] = '';
   $handler->display->display_options['fields']['field_ca_adv_product_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_ca_adv_product_image']['hide_empty'] = TRUE;
+  $handler->display->display_options['fields']['field_ca_adv_product_image']['empty_zero'] = TRUE;
   $handler->display->display_options['fields']['field_ca_adv_product_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_ca_adv_product_image']['settings'] = array(
     'image_style' => 'default',
@@ -801,6 +807,8 @@ function ca_adv_product_views_default_views() {
   $handler->display->display_options['fields']['field_ca_adv_product_o_image']['field'] = 'field_ca_adv_product_o_image';
   $handler->display->display_options['fields']['field_ca_adv_product_o_image']['label'] = '';
   $handler->display->display_options['fields']['field_ca_adv_product_o_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_ca_adv_product_o_image']['hide_empty'] = TRUE;
+  $handler->display->display_options['fields']['field_ca_adv_product_o_image']['empty_zero'] = TRUE;
   $handler->display->display_options['fields']['field_ca_adv_product_o_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_ca_adv_product_o_image']['settings'] = array(
     'image_style' => 'default',
@@ -891,6 +899,8 @@ function ca_adv_product_views_default_views() {
   $handler->display->display_options['fields']['field_ca_adv_product_o_image']['field'] = 'field_ca_adv_product_o_image';
   $handler->display->display_options['fields']['field_ca_adv_product_o_image']['label'] = '';
   $handler->display->display_options['fields']['field_ca_adv_product_o_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_ca_adv_product_o_image']['hide_empty'] = TRUE;
+  $handler->display->display_options['fields']['field_ca_adv_product_o_image']['empty_zero'] = TRUE;
   $handler->display->display_options['fields']['field_ca_adv_product_o_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_ca_adv_product_o_image']['settings'] = array(
     'image_style' => 'default',
@@ -1010,6 +1020,7 @@ function ca_adv_product_views_default_views() {
   $handler->display->display_options['fields']['field_ca_adv_product_image']['label'] = '';
   $handler->display->display_options['fields']['field_ca_adv_product_image']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_ca_adv_product_image']['hide_empty'] = TRUE;
+  $handler->display->display_options['fields']['field_ca_adv_product_image']['empty_zero'] = TRUE;
   $handler->display->display_options['fields']['field_ca_adv_product_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_ca_adv_product_image']['type'] = 'colorbox';
   $handler->display->display_options['fields']['field_ca_adv_product_image']['settings'] = array(
@@ -1058,6 +1069,7 @@ function ca_adv_product_views_default_views() {
   $handler->display->display_options['fields']['field_ca_adv_product_image']['label'] = '';
   $handler->display->display_options['fields']['field_ca_adv_product_image']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_ca_adv_product_image']['hide_empty'] = TRUE;
+  $handler->display->display_options['fields']['field_ca_adv_product_image']['empty_zero'] = TRUE;
   $handler->display->display_options['fields']['field_ca_adv_product_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_ca_adv_product_image']['type'] = 'colorbox';
   $handler->display->display_options['fields']['field_ca_adv_product_image']['settings'] = array(
@@ -1134,6 +1146,8 @@ function ca_adv_product_views_default_views() {
   $handler->display->display_options['fields']['field_ca_adv_product_o_image']['field'] = 'field_ca_adv_product_o_image';
   $handler->display->display_options['fields']['field_ca_adv_product_o_image']['label'] = '';
   $handler->display->display_options['fields']['field_ca_adv_product_o_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_ca_adv_product_o_image']['hide_empty'] = TRUE;
+  $handler->display->display_options['fields']['field_ca_adv_product_o_image']['empty_zero'] = TRUE;
   $handler->display->display_options['fields']['field_ca_adv_product_o_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_ca_adv_product_o_image']['settings'] = array(
     'image_style' => 'default',
