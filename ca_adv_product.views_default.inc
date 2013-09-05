@@ -539,6 +539,7 @@ function ca_adv_product_views_default_views() {
 
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
+  $handler->display->display_options['use_ajax'] = TRUE;
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
@@ -587,6 +588,7 @@ function ca_adv_product_views_default_views() {
 
   /* Display: CA Advanced Products: Category List Template One */
   $handler = $view->new_display('panel_pane', 'CA Advanced Products: Category List Template One', 'ca_adv_product_category_list_1');
+  $handler->display->display_options['defaults']['use_ajax'] = FALSE;
   $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'full';
@@ -646,6 +648,7 @@ function ca_adv_product_views_default_views() {
   $handler->display->display_options['pane_title'] = 'CA Advanced Products: Category List Template One';
   $handler->display->display_options['pane_category']['name'] = 'CA List';
   $handler->display->display_options['pane_category']['weight'] = '0';
+  $handler->display->display_options['inherit_panels_path'] = '1';
 
   /* Display: CA Advanced Products: Sub Category List Template One */
   $handler = $view->new_display('panel_pane', 'CA Advanced Products: Sub Category List Template One', 'ca_adv_product_sub_cat_list_one');
@@ -714,6 +717,7 @@ function ca_adv_product_views_default_views() {
   $handler->display->display_options['pane_title'] = 'CA Advanced Products: Sub Category List Template One';
   $handler->display->display_options['pane_category']['name'] = 'CA List';
   $handler->display->display_options['pane_category']['weight'] = '0';
+  $handler->display->display_options['inherit_panels_path'] = '1';
 
   /* Display: CA Advanced Products: Product List View Template One */
   $handler = $view->new_display('panel_pane', 'CA Advanced Products: Product List View Template One', 'ca_adv_product_product_list_1');
@@ -788,6 +792,7 @@ function ca_adv_product_views_default_views() {
   $handler->display->display_options['pane_title'] = 'CA Advanced Products: Product List Template One';
   $handler->display->display_options['pane_category']['name'] = 'CA List';
   $handler->display->display_options['pane_category']['weight'] = '0';
+  $handler->display->display_options['inherit_panels_path'] = '1';
 
   /* Display: CA Advanced Products: Category Options List View Template One */
   $handler = $view->new_display('panel_pane', 'CA Advanced Products: Category Options List View Template One', 'ca_adv_category_options_list_1');
@@ -800,6 +805,7 @@ function ca_adv_product_views_default_views() {
   $handler->display->display_options['defaults']['row_plugin'] = FALSE;
   $handler->display->display_options['row_plugin'] = 'fields';
   $handler->display->display_options['defaults']['row_options'] = FALSE;
+  $handler->display->display_options['defaults']['empty'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
@@ -868,6 +874,7 @@ function ca_adv_product_views_default_views() {
   $handler->display->display_options['pane_title'] = 'CA Advanced Products: Category Options List Template One';
   $handler->display->display_options['pane_category']['name'] = 'CA Node';
   $handler->display->display_options['pane_category']['weight'] = '0';
+  $handler->display->display_options['inherit_panels_path'] = '1';
 
   /* Display: CA Advanced Products: Prod Cat Options List View Template One */
   $handler = $view->new_display('panel_pane', 'CA Advanced Products: Prod Cat Options List View Template One', 'ca_adv_prod_cat_options_list_1');
@@ -962,6 +969,7 @@ function ca_adv_product_views_default_views() {
   $handler->display->display_options['pane_title'] = 'CA Advanced Products: Prod Cat Options List Template One';
   $handler->display->display_options['pane_category']['name'] = 'CA List';
   $handler->display->display_options['pane_category']['weight'] = '0';
+  $handler->display->display_options['inherit_panels_path'] = '1';
   $export['ca_advanced_products_list'] = $view;
 
   $view = new view();

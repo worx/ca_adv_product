@@ -11,7 +11,7 @@ include_once('ca_adv_product.features.inc');
  */
 function ca_adv_product_menu() {
   $items['admin/config/worx_features/adv_product'] = array(
-    'title' => 'Advanced Product Configuration',
+    'title' => 'Adv Product Configuration',
     'description' => 'Override settings for ca_adv_product',
     'page callback' => 'drupal_get_form',
     'page arguments' => array('ca_adv_product_settings_form'),
@@ -56,11 +56,20 @@ function ca_adv_product_panels_pre_render($panel, $renderer) {
  * Implements hook_views_pre_render().
  */
 function ca_adv_product_views_pre_view(&$view, &$display_id, &$args) {
-  if ($display_id == 'ca_adv_product_list_1') {
-    $view->set_items_per_page(variable_get('ca_adv_product_list_count', 5));
+  if ($display_id == 'ca_adv_product_category_list_1') {
+    $view->set_items_per_page(variable_get('ca_adv_product_cat_list_count', 20));
   }
-  elseif ($display_id == 'ca_adv_product_block_1') {
-    $view->set_items_per_page(variable_get('ca_adv_product_block_count', 1));
+  if ($display_id == 'ca_adv_product_sub_cat_list_one') {
+    $view->set_items_per_page(variable_get('ca_adv_product_sub_cat_list_count', 20));
+  }
+  if ($display_id == 'ca_adv_product_product_list_1') {
+    $view->set_items_per_page(variable_get('ca_adv_product_prod_list_count', 10));
+  }
+  if ($display_id == 'ca_adv_category_options_list_1') {
+    $view->set_items_per_page(variable_get('ca_adv_product_option_list_count', 10));
+  }
+  if ($display_id == 'ca_adv_prod_cat_options_list_1') {
+    $view->set_items_per_page(variable_get('ca_adv_product_option_list_count', 10));
   }
 }
 

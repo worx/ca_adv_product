@@ -31,19 +31,33 @@ function ca_adv_product_settings_form() {
     '#required' => TRUE,
     '#description' => t('What would you like the menu title to be?'),
   );
-  $form['ca_adv_product_list_count'] = array(
+  $form['ca_adv_product_cat_list_count'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Categories per page'),
+    '#default_value' => variable_get('ca_adv_product_cat_list_count', 20),
+    '#required' => TRUE,
+    '#description' => t('How many categories would you like displayed per page? Suggested in groups for 4.'),
+  );
+  $form['ca_adv_product_sub_cat_list_count'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Sub categories per page'),
+    '#default_value' => variable_get('ca_adv_product_sub_cat_list_count', 20),
+    '#required' => TRUE,
+    '#description' => t('How many categories would you like displayed per page? Suggested in groups for 4.'),
+  );
+  $form['ca_adv_product_prod_list_count'] = array(
     '#type' => 'textfield',
     '#title' => t('Products per page'),
-    '#default_value' => variable_get('ca_adv_product_list_count', 5),
+    '#default_value' => variable_get('ca_adv_product_prod_list_count', 10),
     '#required' => TRUE,
     '#description' => t('How many advanced products would you like displayed per page?'),
   );
-  $form['ca_adv_product_block_count'] = array(
+  $form['ca_adv_product_option_list_count'] = array(
     '#type' => 'textfield',
-    '#title' => t('Products in the block'),
-    '#default_value' => variable_get('ca_adv_product_block_count', 1),
+    '#title' => t('Product options per page'),
+    '#default_value' => variable_get('ca_adv_product_option_list_count', 10),
     '#required' => TRUE,
-    '#description' => t('How many advanced products would you like displayed in the block?'),
+    '#description' => t('How many advanced products would you like displayed per page?'),
   );
   $form['ca_adv_product_list_template'] = array(
     '#type' => 'select',
