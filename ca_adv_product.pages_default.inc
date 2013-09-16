@@ -19,7 +19,7 @@ function ca_adv_product_default_page_manager_handlers() {
   $handler->handler = 'panel_context';
   $handler->weight = 0;
   $handler->conf = array(
-    'title' => 'CA Advanced Product: Node Template One',
+    'title' => 'CA Adv Product: Node Template One',
     'no_blocks' => 0,
     'pipeline' => 'standard',
     'body_classes_to_remove' => '',
@@ -257,9 +257,9 @@ function ca_adv_product_default_page_manager_handlers() {
   $handler->task = 'node_view';
   $handler->subtask = '';
   $handler->handler = 'panel_context';
-  $handler->weight = 1;
+  $handler->weight = 0;
   $handler->conf = array(
-    'title' => 'CA Advanced Product: Category Template One',
+    'title' => 'CA Adv Product: Category Template One',
     'no_blocks' => 0,
     'pipeline' => 'standard',
     'body_classes_to_remove' => '',

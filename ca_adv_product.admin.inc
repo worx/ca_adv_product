@@ -41,7 +41,7 @@ function ca_adv_product_settings_form() {
   $form['ca_adv_product_sub_cat_list_count'] = array(
     '#type' => 'textfield',
     '#title' => t('Sub categories per page'),
-    '#default_value' => variable_get('ca_adv_product_sub_cat_list_count', 20),
+    '#default_value' => variable_get('ca_adv_product_sub_cat_list_count', 4),
     '#required' => TRUE,
     '#description' => t('How many categories would you like displayed per page? Suggested in groups for 4.'),
   );
@@ -58,28 +58,6 @@ function ca_adv_product_settings_form() {
     '#default_value' => variable_get('ca_adv_product_option_list_count', 10),
     '#required' => TRUE,
     '#description' => t('How many advanced products would you like displayed per page?'),
-  );
-  $form['ca_adv_product_list_template'] = array(
-    '#type' => 'select',
-    '#title' => t('Advanced Products\'s list template'),
-    '#options' => array(
-      'ca_adv_product_list_template_one' => t('Template one'),
-      'ca_adv_product_list_template_two' => t('Template two'),
-      'ca_adv_product_list_template_three' => t('Template three'),
-    ),
-    '#required' => TRUE,
-    '#default_value' => variable_get('ca_adv_product_list_template', 'ca_adv_product_list_template_one'),
-  );
-  $form['ca_adv_product_node_template'] = array(
-    '#type' => 'select',
-    '#title' => t('Advanced Products\'s node template'),
-    '#options' => array(
-      'ca_adv_product_node_template_one' => t('Template one'),
-      'ca_adv_product_node_template_two' => t('Template two'),
-      'ca_adv_product_node_template_three' => t('Template three'),
-    ),
-    '#required' => TRUE,
-    '#default_value' => variable_get('ca_adv_product_node_template', 'ca_adv_product_node_template_one'),
   );
   $form['actions'] = array(
     '#type' => 'actions',

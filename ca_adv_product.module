@@ -60,7 +60,7 @@ function ca_adv_product_views_pre_view(&$view, &$display_id, &$args) {
     $view->set_items_per_page(variable_get('ca_adv_product_cat_list_count', 20));
   }
   if ($display_id == 'ca_adv_product_sub_cat_list_one') {
-    $view->set_items_per_page(variable_get('ca_adv_product_sub_cat_list_count', 20));
+    $view->set_items_per_page(variable_get('ca_adv_product_sub_cat_list_count', 4));
   }
   if ($display_id == 'ca_adv_product_product_list_1') {
     $view->set_items_per_page(variable_get('ca_adv_product_prod_list_count', 10));
