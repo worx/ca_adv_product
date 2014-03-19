@@ -1,0 +1,121 @@
+.ca-adv-product-list table, 
+.ca-adv-product-list tbody, 
+.ca-adv-product-list tr, 
+.ca-adv-product-list tr td, 
+.node-type-ca-adv-product-category .view-display-id-ca_adv_product_sub_cat_list_one table, 
+.node-type-ca-adv-product-category .view-display-id-ca_adv_product_sub_cat_list_one tbody, 
+.node-type-ca-adv-product-category .view-display-id-ca_adv_product_sub_cat_list_one tr, 
+.node-type-ca-adv-product-category .view-display-id-ca_adv_product_sub_cat_list_one tr td {
+  display:block;
+  width: 100%;
+  border: none;
+}
+
+.ca-adv-product-list tr td, 
+.node-type-ca-adv-product-category tr td {
+  float: left;
+  padding: 0;
+  vertical-align: text-top;
+}
+
+.node-type-ca-adv-product-category .panels-flexible-region-new-second_left,
+.node-type-ca-adv-product-category .panels-flexible-region-new-second_right,
+.node-type-ca-adv-product .panels-flexible-region-new-first_left,
+.node-type-ca-adv-product .panels-flexible-region-new-first_right {
+  width: 100%;
+}
+
+.pane-ca-advanced-products-list-ca-adv-product-product-list-1 .views-field-field-ca-adv-product-image {
+  float: left;
+  padding: 0 15px 5px 0;
+  text-align: center;
+}
+
+.pane-ca-advanced-products-node-ca-adv-product-node-1a {
+  float: none;
+  padding: 0 0 5px 0;
+  text-align: center;
+}
+
+.pane-ca-advanced-products-node-ca-adv-product-node-1b {
+  float: none;
+  padding: 0 0 5px 0;
+  width: 100%;
+}
+
+.pane-ca-advanced-products-node-ca-adv-product-node-1b table {
+  width: 100%
+}
+
+.pane-ca-advanced-products-node-ca-adv-product-node-1b td {
+  width: 25%;
+  padding: 0;
+  text-align: center;
+}
+
+@media only screen and (min-width:481px) {
+  .ca-adv-product-list tr td, .node-type-ca-adv-product-category .view-display-id-ca_adv_product_sub_cat_list_one tr td {
+    width: 50%;
+  }
+
+  .pane-ca-advanced-products-list-ca-adv-product-product-list-1 .views-field-field-ca-adv-product-image {
+    float: left;
+    padding: 0 15px 5px 0;
+  }
+
+  .pane-ca-advanced-products-node-ca-adv-product-node-1a {
+    float: left;
+    padding: 0 15px 5px 0;
+  }
+
+  .pane-ca-advanced-products-node-ca-adv-product-node-1b {
+    float: left;
+    padding: 0 15px 5px 0;
+    width: 200px;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 675px) {
+  .ca-adv-product-list td:nth-child(2n + 1), .node-type-ca-adv-product-category .view-display-id-ca_adv_product_sub_cat_list_one td:nth-child(2n + 1) {clear: left;}
+}
+
+@media only screen and (min-width:675px) {
+  .ca-adv-product-list tr td, .node-type-ca-adv-product-category .view-display-id-ca_adv_product_sub_cat_list_one tr td {
+    width: 33%;
+  }
+}
+
+@media only screen and (min-width: 675px) and (max-width: 899px) {
+  .ca-adv-product-list tr:nth-child(1) td:nth-child(3n + 1), .node-type-ca-adv-product-category .view-display-id-ca_adv_product_sub_cat_list_one tr:nth-child(1) td:nth-child(3n + 1) {clear: left;}
+  .ca-adv-product-list tr:nth-child(2) td:nth-child(3), .node-type-ca-adv-product-category .view-display-id-ca_adv_product_sub_cat_list_one tr:nth-child(2) td:nth-child(3) {clear: left;}
+  .ca-adv-product-list tr:nth-child(3) td:nth-child(2), .node-type-ca-adv-product-category .view-display-id-ca_adv_product_sub_cat_list_one tr:nth-child(3) td:nth-child(2) {clear: left;}
+  .ca-adv-product-list tr:nth-child(4) td:nth-child(3n + 1), .node-type-ca-adv-product-category .view-display-id-ca_adv_product_sub_cat_list_one tr:nth-child(4) td:nth-child(3n + 1) {clear: left;}
+  .ca-adv-product-list tr:nth-child(5) td:nth-child(3), .node-type-ca-adv-product-category .view-display-id-ca_adv_product_sub_cat_list_one tr:nth-child(5) td:nth-child(3) {clear: left;}
+}
+
+@media only screen and (min-width:900px) {
+  .ca-adv-product-list table, 
+  .ca-adv-product-list tbody {display: table;}
+  .ca-adv-product-list tr {display: table-row;}
+  .ca-adv-product-list td {display: table-celll;}
+
+  .ca-adv-product-list tr td, .node-type-ca-adv-product-category .view-display-id-ca_adv_product_sub_cat_list_one tr td {
+    padding: 0;
+    width: 25%;
+  }
+
+  .ca-adv-product-list tr td, .ca-adv-product-list tr th, .node-type-ca-adv-product-category .view-display-id-ca_adv_product_sub_cat_list_one tr td,  .node-type-ca-adv-product-category .view-display-id-ca_adv_product_sub_cat_list_one tr th {
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width:950px) {
+  .node-type-ca-adv-product-category .panels-flexible-region-new-second_left,
+  .node-type-ca-adv-product .panels-flexible-region-new-first_left {
+    width: 66%;
+  }
+  .node-type-ca-adv-product-category .panels-flexible-region-new-second_right,
+  .node-type-ca-adv-product .panels-flexible-region-new-first_right {
+    width: 32.9%;
+  }
+}
