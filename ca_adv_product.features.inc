@@ -59,6 +59,7 @@ function ca_adv_product_node_info() {
       'help' => '',
     ),
   );
+  drupal_alter('node_info', $items);
   return $items;
 }
 

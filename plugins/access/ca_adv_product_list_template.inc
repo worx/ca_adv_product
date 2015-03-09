@@ -27,8 +27,9 @@ function ca_advanced_product_list_template_access_settings($form, &$form_state, 
     '#title' => t('Advanced Product\'s list template'),
     '#options' => array(
       'ca_advanced_product_list_template_one' => t('Template one'),
+      'ca_advanced_product_list_template_one_flex' => t('Template one Flex'),
       'ca_advanced_product_list_template_two' => t('Template two'),
-      'ca_advanced_product_list_template_three' => t('Template three'),
+      'ca_advanced_product_list_template_two_flex' => t('Template two Flex'),
     ),
     '#required' => TRUE,
     '#default_value' => $conf['ca_advanced_product_list_template'],
@@ -57,11 +58,14 @@ function ca_advanced_product_list_template_access_summary($conf, $context) {
   if ($conf['ca_advanced_product_list_template'] == 'ca_advanced_product_list_template_one') {
     $template = t('Template one');
   }
+  elseif ($conf['ca_advanced_product_list_template'] == 'ca_advanced_product_list_template_one_flex') {
+    $template = t('Template one Flex');
+  }
   elseif ($conf['ca_advanced_product_list_template'] == 'ca_advanced_product_list_template_two') {
     $template = t('Template two');
   }
   else {
-    $template = t('Template three');
+    $template = t('Template two Flex');
   }
 
   return t('Display template is set to: ' . $template);

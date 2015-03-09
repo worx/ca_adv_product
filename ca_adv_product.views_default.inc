@@ -586,8 +586,8 @@ function ca_adv_product_views_default_views() {
     'ca_adv_product' => 'ca_adv_product',
   );
 
-  /* Display: CA Advanced Products: Category List Template One */
-  $handler = $view->new_display('panel_pane', 'CA Advanced Products: Category List Template One', 'ca_adv_product_category_list_1');
+  /* Display: CA Advanced Products: Category List Grid Template One */
+  $handler = $view->new_display('panel_pane', 'CA Advanced Products: Category List Grid Template One', 'ca_adv_product_category_list_1');
   $handler->display->display_options['defaults']['use_ajax'] = FALSE;
   $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
   $handler->display->display_options['defaults']['pager'] = FALSE;
@@ -645,13 +645,13 @@ function ca_adv_product_views_default_views() {
   $handler->display->display_options['filters']['field_ca_adv_category_parent_target_id']['table'] = 'field_data_field_ca_adv_category_parent';
   $handler->display->display_options['filters']['field_ca_adv_category_parent_target_id']['field'] = 'field_ca_adv_category_parent_target_id';
   $handler->display->display_options['filters']['field_ca_adv_category_parent_target_id']['operator'] = 'empty';
-  $handler->display->display_options['pane_title'] = 'CA Advanced Products: Category List Template One';
+  $handler->display->display_options['pane_title'] = 'CA Advanced Products: Category List Grid Template One';
   $handler->display->display_options['pane_category']['name'] = 'CA List';
   $handler->display->display_options['pane_category']['weight'] = '0';
   $handler->display->display_options['inherit_panels_path'] = '1';
 
-  /* Display: CA Advanced Products: Sub Category List Template One */
-  $handler = $view->new_display('panel_pane', 'CA Advanced Products: Sub Category List Template One', 'ca_adv_product_sub_cat_list_one');
+  /* Display: CA Advanced Products: Sub Category List Grid Template One */
+  $handler = $view->new_display('panel_pane', 'CA Advanced Products: Sub Category List Grid Template One', 'ca_adv_product_sub_cat_list_one');
   $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'full';
@@ -714,7 +714,7 @@ function ca_adv_product_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'ca_adv_product_category' => 'ca_adv_product_category',
   );
-  $handler->display->display_options['pane_title'] = 'CA Advanced Products: Sub Category List Template One';
+  $handler->display->display_options['pane_title'] = 'CA Advanced Products: Sub Category List Grid Template One';
   $handler->display->display_options['pane_category']['name'] = 'CA List';
   $handler->display->display_options['pane_category']['weight'] = '0';
   $handler->display->display_options['inherit_panels_path'] = '1';
@@ -766,7 +766,7 @@ function ca_adv_product_views_default_views() {
   $handler->display->display_options['fields']['view_node']['label'] = '';
   $handler->display->display_options['fields']['view_node']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['view_node']['text'] = 'Read More';
-  /* Field: Content: AddToAny link */
+  /* Field: Broken/missing handler */
   $handler->display->display_options['fields']['addtoany_link']['id'] = 'addtoany_link';
   $handler->display->display_options['fields']['addtoany_link']['table'] = 'node';
   $handler->display->display_options['fields']['addtoany_link']['field'] = 'addtoany_link';
@@ -967,6 +967,139 @@ function ca_adv_product_views_default_views() {
     'ca_adv_product_option' => 'ca_adv_product_option',
   );
   $handler->display->display_options['pane_title'] = 'CA Advanced Products: Prod Cat Options List Template One';
+  $handler->display->display_options['pane_category']['name'] = 'CA List';
+  $handler->display->display_options['pane_category']['weight'] = '0';
+  $handler->display->display_options['inherit_panels_path'] = '1';
+
+  /* Display: CA Advanced Products: Category List Flex Template One */
+  $handler = $view->new_display('panel_pane', 'CA Advanced Products: Category List Flex Template One', 'ca_adv_product_category_flex_1');
+  $handler->display->display_options['defaults']['use_ajax'] = FALSE;
+  $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
+  $handler->display->display_options['defaults']['pager'] = FALSE;
+  $handler->display->display_options['pager']['type'] = 'full';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '20';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['pager']['options']['id'] = '0';
+  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
+  $handler->display->display_options['style_plugin'] = 'default';
+  $handler->display->display_options['defaults']['style_options'] = FALSE;
+  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
+  $handler->display->display_options['row_plugin'] = 'fields';
+  $handler->display->display_options['defaults']['row_options'] = FALSE;
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: Category Image */
+  $handler->display->display_options['fields']['field_ca_ad_prod_category_image']['id'] = 'field_ca_ad_prod_category_image';
+  $handler->display->display_options['fields']['field_ca_ad_prod_category_image']['table'] = 'field_data_field_ca_ad_prod_category_image';
+  $handler->display->display_options['fields']['field_ca_ad_prod_category_image']['field'] = 'field_ca_ad_prod_category_image';
+  $handler->display->display_options['fields']['field_ca_ad_prod_category_image']['label'] = '';
+  $handler->display->display_options['fields']['field_ca_ad_prod_category_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_ca_ad_prod_category_image']['hide_empty'] = TRUE;
+  $handler->display->display_options['fields']['field_ca_ad_prod_category_image']['empty_zero'] = TRUE;
+  $handler->display->display_options['fields']['field_ca_ad_prod_category_image']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_ca_ad_prod_category_image']['settings'] = array(
+    'image_style' => 'default',
+    'image_link' => 'content',
+  );
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['title']['element_type'] = 'h2';
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'ca_adv_product_category' => 'ca_adv_product_category',
+  );
+  /* Filter criterion: Content: Parent Category (field_ca_adv_category_parent) */
+  $handler->display->display_options['filters']['field_ca_adv_category_parent_target_id']['id'] = 'field_ca_adv_category_parent_target_id';
+  $handler->display->display_options['filters']['field_ca_adv_category_parent_target_id']['table'] = 'field_data_field_ca_adv_category_parent';
+  $handler->display->display_options['filters']['field_ca_adv_category_parent_target_id']['field'] = 'field_ca_adv_category_parent_target_id';
+  $handler->display->display_options['filters']['field_ca_adv_category_parent_target_id']['operator'] = 'empty';
+  $handler->display->display_options['pane_title'] = 'CA Advanced Products: Category List Flex Template One';
+  $handler->display->display_options['pane_category']['name'] = 'CA List';
+  $handler->display->display_options['pane_category']['weight'] = '0';
+  $handler->display->display_options['inherit_panels_path'] = '1';
+
+  /* Display: CA Advanced Products: Sub Category List Flex Template One */
+  $handler = $view->new_display('panel_pane', 'CA Advanced Products: Sub Category List Flex Template One', 'ca_adv_product_sub_cat_flex_one');
+  $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
+  $handler->display->display_options['defaults']['pager'] = FALSE;
+  $handler->display->display_options['pager']['type'] = 'full';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '20';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['pager']['options']['id'] = '0';
+  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
+  $handler->display->display_options['style_plugin'] = 'default';
+  $handler->display->display_options['defaults']['style_options'] = FALSE;
+  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
+  $handler->display->display_options['row_plugin'] = 'fields';
+  $handler->display->display_options['defaults']['row_options'] = FALSE;
+  $handler->display->display_options['defaults']['empty'] = FALSE;
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: Category Image */
+  $handler->display->display_options['fields']['field_ca_ad_prod_category_image']['id'] = 'field_ca_ad_prod_category_image';
+  $handler->display->display_options['fields']['field_ca_ad_prod_category_image']['table'] = 'field_data_field_ca_ad_prod_category_image';
+  $handler->display->display_options['fields']['field_ca_ad_prod_category_image']['field'] = 'field_ca_ad_prod_category_image';
+  $handler->display->display_options['fields']['field_ca_ad_prod_category_image']['label'] = '';
+  $handler->display->display_options['fields']['field_ca_ad_prod_category_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_ca_ad_prod_category_image']['hide_empty'] = TRUE;
+  $handler->display->display_options['fields']['field_ca_ad_prod_category_image']['empty_zero'] = TRUE;
+  $handler->display->display_options['fields']['field_ca_ad_prod_category_image']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_ca_ad_prod_category_image']['settings'] = array(
+    'image_style' => 'default',
+    'image_link' => 'content',
+  );
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['title']['element_type'] = 'h3';
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  $handler->display->display_options['defaults']['arguments'] = FALSE;
+  /* Contextual filter: Content: Parent Category (field_ca_adv_category_parent) */
+  $handler->display->display_options['arguments']['field_ca_adv_category_parent_target_id']['id'] = 'field_ca_adv_category_parent_target_id';
+  $handler->display->display_options['arguments']['field_ca_adv_category_parent_target_id']['table'] = 'field_data_field_ca_adv_category_parent';
+  $handler->display->display_options['arguments']['field_ca_adv_category_parent_target_id']['field'] = 'field_ca_adv_category_parent_target_id';
+  $handler->display->display_options['arguments']['field_ca_adv_category_parent_target_id']['default_action'] = 'default';
+  $handler->display->display_options['arguments']['field_ca_adv_category_parent_target_id']['default_argument_type'] = 'node';
+  $handler->display->display_options['arguments']['field_ca_adv_category_parent_target_id']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['field_ca_adv_category_parent_target_id']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['field_ca_adv_category_parent_target_id']['summary_options']['items_per_page'] = '25';
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'ca_adv_product_category' => 'ca_adv_product_category',
+  );
+  $handler->display->display_options['pane_title'] = 'CA Advanced Products: Sub Category List Flex Template One';
   $handler->display->display_options['pane_category']['name'] = 'CA List';
   $handler->display->display_options['pane_category']['weight'] = '0';
   $handler->display->display_options['inherit_panels_path'] = '1';
