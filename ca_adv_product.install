@@ -25,6 +25,9 @@ function ca_adv_product_install() {
   variable_set('pathauto_node_ca_adv_product_option_pattern', 'product/[node:field_ca_ad_prod_parent_category]/[node:title]');
 
   variable_set('pathauto_node_ca_adv_product_pattern', 'product/[node:field_ca_ad_prod_parent_category]/[node:title]');
+
+  // Get the worx_aurora_base_enable variable to default set if not already set.
+  variable_get('worx_aurora_base_enable', 'worx_aurora_base_disabled');
   
   /**
    * Sets the Product Admin Admin role to have permission to
@@ -36,7 +39,31 @@ function ca_adv_product_install() {
       'create files' => TRUE,
       'access media browser' => TRUE,
       'add media from remote sources' => TRUE,
-      'assign node weight' => TRUE,
+      'assign node weights' => TRUE,
+    )
+  );
+}
+
+/**
+ * Setting worx_aurora_base_enable default so that panels can work corretly when aura base feature is not enabled.
+ * Enable the taxonomy/term/%taxonomy_term page
+ * Set the Administer Taxonomy for Blog Admin
+ */
+function ca_blog_update_7000() {
+  // Get the worx_aurora_base_enable variable to default set if not already set.
+  variable_get('worx_aurora_base_enable', 'worx_aurora_base_disabled');
+
+  /**
+   * Sets the Product Admin Admin role to have permission to
+   * create files, access media browser,
+   * add media from remote sources, assign node weights.
+   */
+  user_role_change_permissions(60140418, 
+    array(
+      'create files' => TRUE,
+      'access media browser' => TRUE,
+      'add media from remote sources' => TRUE,
+      'assign node weights' => TRUE,
     )
   );
 }
