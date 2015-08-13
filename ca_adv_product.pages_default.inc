@@ -1243,29 +1243,6 @@ function ca_adv_product_default_page_manager_pages() {
   $handler = new stdClass();
   $handler->disabled = FALSE; /* Edit this to true to make a default handler disabled initially */
   $handler->api_version = 1;
-  $handler->name = 'page_ca_adv_product_add_product_menu_context';
-  $handler->task = 'page';
-  $handler->subtask = 'ca_adv_product_add_product';
-  $handler->handler = 'menu_context';
-  $handler->weight = -29;
-  $handler->conf = array(
-    'title' => 'Context Admin',
-    'no_blocks' => FALSE,
-    'css_id' => '',
-    'css' => '',
-    'contexts' => array(),
-    'relationships' => array(),
-    'context_admin_options' => 'entityref_create_node:ca_adv_product:field_ca_ad_prod_parent_category',
-    'context_admin_options_items' => 'ca_adv_product',
-    'context_admin_use_node_edit' => 0,
-    'submitted_context' => 'argument_entity_id:node_1',
-    'context_admin_field' => 'field_ca_ad_prod_parent_category',
-    'context_admin_custom_redirect' => '',
-  );
-  $page->default_handlers[$handler->name] = $handler;
-  $handler = new stdClass();
-  $handler->disabled = FALSE; /* Edit this to true to make a default handler disabled initially */
-  $handler->api_version = 1;
   $handler->name = 'page_ca_adv_product_add_product__aurora_adv_product_add_product';
   $handler->task = 'page';
   $handler->subtask = 'ca_adv_product_add_product';
@@ -1282,6 +1259,18 @@ function ca_adv_product_default_page_manager_pages() {
     'contexts' => array(),
     'relationships' => array(),
     'name' => 'aurora_adv_product_add_product',
+    'access' => array(
+      'plugins' => array(
+        0 => array(
+          'name' => 'worx_aurora_base_settings',
+          'settings' => array(
+            'worx_aurora_base_enable' => 'worx_aurora_base_enabled',
+          ),
+          'not' => FALSE,
+        ),
+      ),
+      'logic' => 'and',
+    ),
   );
   $display = new panels_display();
   $display->layout = 'worx_aurora';
@@ -1327,6 +1316,29 @@ function ca_adv_product_default_page_manager_pages() {
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = 'new-b3788397-9a9a-4fcc-9900-7a71494a2616';
   $handler->conf['display'] = $display;
+  $page->default_handlers[$handler->name] = $handler;
+  $handler = new stdClass();
+  $handler->disabled = FALSE; /* Edit this to true to make a default handler disabled initially */
+  $handler->api_version = 1;
+  $handler->name = 'page_ca_adv_product_add_product_menu_context';
+  $handler->task = 'page';
+  $handler->subtask = 'ca_adv_product_add_product';
+  $handler->handler = 'menu_context';
+  $handler->weight = -29;
+  $handler->conf = array(
+    'title' => 'Context Admin',
+    'no_blocks' => FALSE,
+    'css_id' => '',
+    'css' => '',
+    'contexts' => array(),
+    'relationships' => array(),
+    'context_admin_options' => 'entityref_create_node:ca_adv_product:field_ca_ad_prod_parent_category',
+    'context_admin_options_items' => 'ca_adv_product',
+    'context_admin_use_node_edit' => 0,
+    'submitted_context' => 'argument_entity_id:node_1',
+    'context_admin_field' => 'field_ca_ad_prod_parent_category',
+    'context_admin_custom_redirect' => '',
+  );
   $page->default_handlers[$handler->name] = $handler;
   $pages['ca_adv_product_add_product'] = $page;
 

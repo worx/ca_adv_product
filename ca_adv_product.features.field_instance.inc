@@ -54,7 +54,8 @@ function ca_adv_product_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-ca_adv_product-field_ca_ad_prod_parent_category'
+  // Exported field_instance:
+  // 'node-ca_adv_product-field_ca_ad_prod_parent_category'
   $field_instances['node-ca_adv_product-field_ca_ad_prod_parent_category'] = array(
     'bundle' => 'ca_adv_product',
     'default_value' => NULL,
@@ -250,7 +251,8 @@ function ca_adv_product_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-ca_adv_product_category-field_ca_ad_prod_category_image'
+  // Exported field_instance:
+  // 'node-ca_adv_product_category-field_ca_ad_prod_category_image'
   $field_instances['node-ca_adv_product_category-field_ca_ad_prod_category_image'] = array(
     'bundle' => 'ca_adv_product_category',
     'deleted' => 0,
@@ -300,7 +302,8 @@ function ca_adv_product_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-ca_adv_product_category-field_ca_adv_category_parent'
+  // Exported field_instance:
+  // 'node-ca_adv_product_category-field_ca_adv_category_parent'
   $field_instances['node-ca_adv_product_category-field_ca_adv_category_parent'] = array(
     'bundle' => 'ca_adv_product_category',
     'default_value' => NULL,
@@ -387,7 +390,8 @@ function ca_adv_product_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-ca_adv_product_option-field_ca_ad_prod_parent_category'
+  // Exported field_instance:
+  // 'node-ca_adv_product_option-field_ca_ad_prod_parent_category'
   $field_instances['node-ca_adv_product_option-field_ca_ad_prod_parent_category'] = array(
     'bundle' => 'ca_adv_product_option',
     'default_value' => NULL,
@@ -430,7 +434,8 @@ function ca_adv_product_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-ca_adv_product_option-field_ca_adv_product_o_image'
+  // Exported field_instance:
+  // 'node-ca_adv_product_option-field_ca_adv_product_o_image'
   $field_instances['node-ca_adv_product_option-field_ca_adv_product_o_image'] = array(
     'bundle' => 'ca_adv_product_option',
     'deleted' => 0,
