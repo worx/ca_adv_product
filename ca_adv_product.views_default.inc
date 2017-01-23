@@ -520,7 +520,7 @@ function ca_adv_product_views_default_views() {
   $handler->display->display_options['fields']['field_ca_ad_prod_category_image']['empty_zero'] = TRUE;
   $handler->display->display_options['fields']['field_ca_ad_prod_category_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_ca_ad_prod_category_image']['settings'] = array(
-    'image_style' => 'default',
+    'image_style' => 'crop_default_landscape',
     'image_link' => 'content',
   );
   /* Field: Content: Title */
@@ -584,7 +584,7 @@ function ca_adv_product_views_default_views() {
   $handler->display->display_options['fields']['field_ca_ad_prod_category_image']['empty_zero'] = TRUE;
   $handler->display->display_options['fields']['field_ca_ad_prod_category_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_ca_ad_prod_category_image']['settings'] = array(
-    'image_style' => 'default',
+    'image_style' => 'crop_default_landscape',
     'image_link' => 'content',
   );
   /* Field: Content: Title */
@@ -650,7 +650,7 @@ function ca_adv_product_views_default_views() {
   $handler->display->display_options['fields']['field_ca_adv_product_image']['empty_zero'] = TRUE;
   $handler->display->display_options['fields']['field_ca_adv_product_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_ca_adv_product_image']['settings'] = array(
-    'image_style' => 'default',
+    'image_style' => 'crop_default_landscape',
     'image_link' => 'content',
   );
   $handler->display->display_options['fields']['field_ca_adv_product_image']['delta_limit'] = '1';
@@ -905,7 +905,7 @@ function ca_adv_product_views_default_views() {
   $handler->display->display_options['fields']['field_ca_ad_prod_category_image']['empty_zero'] = TRUE;
   $handler->display->display_options['fields']['field_ca_ad_prod_category_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_ca_ad_prod_category_image']['settings'] = array(
-    'image_style' => 'default',
+    'image_style' => 'crop_default_landscape',
     'image_link' => 'content',
   );
   /* Field: Content: Title */
@@ -969,7 +969,7 @@ function ca_adv_product_views_default_views() {
   $handler->display->display_options['fields']['field_ca_ad_prod_category_image']['empty_zero'] = TRUE;
   $handler->display->display_options['fields']['field_ca_ad_prod_category_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_ca_ad_prod_category_image']['settings'] = array(
-    'image_style' => 'default',
+    'image_style' => 'crop_default_landscape',
     'image_link' => 'content',
   );
   /* Field: Content: Title */
@@ -1084,7 +1084,8 @@ function ca_adv_product_views_default_views() {
   $handler->display->display_options['fields']['field_ca_adv_product_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_ca_adv_product_image']['type'] = 'colorbox';
   $handler->display->display_options['fields']['field_ca_adv_product_image']['settings'] = array(
-    'colorbox_node_style' => 'default',
+    'colorbox_node_style' => 'crop_default_landscape',
+    'colorbox_node_style_first' => '',
     'colorbox_image_style' => '',
     'colorbox_gallery' => 'page',
     'colorbox_gallery_custom' => '',
@@ -1116,7 +1117,7 @@ function ca_adv_product_views_default_views() {
   $handler->display->display_options['pager']['options']['offset'] = '1';
   $handler->display->display_options['pager']['options']['id'] = '0';
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
-  $handler->display->display_options['style_plugin'] = 'grid';
+  $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['defaults']['style_options'] = FALSE;
   $handler->display->display_options['defaults']['row_plugin'] = FALSE;
   $handler->display->display_options['row_plugin'] = 'fields';
@@ -1133,7 +1134,7 @@ function ca_adv_product_views_default_views() {
   $handler->display->display_options['fields']['field_ca_adv_product_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_ca_adv_product_image']['type'] = 'colorbox';
   $handler->display->display_options['fields']['field_ca_adv_product_image']['settings'] = array(
-    'colorbox_node_style' => 'crop_default_landscape',
+    'colorbox_node_style' => 'crop_default_landscape_thumbnail',
     'colorbox_node_style_first' => '',
     'colorbox_image_style' => '',
     'colorbox_gallery' => 'page',

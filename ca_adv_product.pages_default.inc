@@ -195,6 +195,25 @@ function ca_adv_product_default_page_manager_handlers() {
   $display->content['new-8eec0dd9-739a-470d-b311-0c6cdcd58dbe'] = $pane;
   $display->panels['first_left'][2] = 'new-8eec0dd9-739a-470d-b311-0c6cdcd58dbe';
   $pane = new stdClass();
+  $pane->pid = 'new-82040da2-566d-4128-a9fb-798a45252a80';
+  $pane->panel = 'first_left';
+  $pane->type = 'views_panes';
+  $pane->subtype = 'ca_advanced_products_node-ca_adv_product_node_video_1';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array();
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 3;
+  $pane->locks = array();
+  $pane->uuid = '82040da2-566d-4128-a9fb-798a45252a80';
+  $display->content['new-82040da2-566d-4128-a9fb-798a45252a80'] = $pane;
+  $display->panels['first_left'][3] = 'new-82040da2-566d-4128-a9fb-798a45252a80';
+  $pane = new stdClass();
   $pane->pid = 'new-5f9194aa-28c6-4b1b-a1cf-0ef4b7749f8a';
   $pane->panel = 'first_left';
   $pane->type = 'block';
@@ -211,11 +230,11 @@ function ca_adv_product_default_page_manager_handlers() {
   );
   $pane->css = array();
   $pane->extras = array();
-  $pane->position = 3;
+  $pane->position = 4;
   $pane->locks = array();
   $pane->uuid = '5f9194aa-28c6-4b1b-a1cf-0ef4b7749f8a';
   $display->content['new-5f9194aa-28c6-4b1b-a1cf-0ef4b7749f8a'] = $pane;
-  $display->panels['first_left'][3] = 'new-5f9194aa-28c6-4b1b-a1cf-0ef4b7749f8a';
+  $display->panels['first_left'][4] = 'new-5f9194aa-28c6-4b1b-a1cf-0ef4b7749f8a';
   $pane = new stdClass();
   $pane->pid = 'new-2efbc227-2e8e-4732-9449-dd40c8ed5be4';
   $pane->panel = 'first_right';
@@ -235,25 +254,6 @@ function ca_adv_product_default_page_manager_handlers() {
   $pane->uuid = '2efbc227-2e8e-4732-9449-dd40c8ed5be4';
   $display->content['new-2efbc227-2e8e-4732-9449-dd40c8ed5be4'] = $pane;
   $display->panels['first_right'][0] = 'new-2efbc227-2e8e-4732-9449-dd40c8ed5be4';
-  $pane = new stdClass();
-  $pane->pid = 'new-82040da2-566d-4128-a9fb-798a45252a80';
-  $pane->panel = 'video_section_';
-  $pane->type = 'views_panes';
-  $pane->subtype = 'ca_advanced_products_node-ca_adv_product_node_video_1';
-  $pane->shown = TRUE;
-  $pane->access = array();
-  $pane->configuration = array();
-  $pane->cache = array();
-  $pane->style = array(
-    'settings' => NULL,
-  );
-  $pane->css = array();
-  $pane->extras = array();
-  $pane->position = 0;
-  $pane->locks = array();
-  $pane->uuid = '82040da2-566d-4128-a9fb-798a45252a80';
-  $display->content['new-82040da2-566d-4128-a9fb-798a45252a80'] = $pane;
-  $display->panels['video_section_'][0] = 'new-82040da2-566d-4128-a9fb-798a45252a80';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
