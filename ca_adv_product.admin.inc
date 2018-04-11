@@ -37,11 +37,9 @@ function ca_adv_product_settings_form() {
     '#options' => array(
       'ca_advanced_product_list_template_one' => t('Template one'),
       'ca_advanced_product_list_template_one_flex' => t('Template one Flex'),
-      'ca_advanced_product_list_template_two' => t('Template two'),
-      'ca_advanced_product_list_template_two_flex' => t('Template two Flex'),
     ),
     '#required' => TRUE,
-    '#default_value' => variable_get('ca_advanced_product_list_template', 'ca_advanced_product_list_template_one'),
+    '#default_value' => variable_get('ca_advanced_product_list_template', 'ca_advanced_product_list_template_one_flex'),
   );
   $form['ca_adv_product_cat_list_count'] = array(
     '#type' => 'textfield',

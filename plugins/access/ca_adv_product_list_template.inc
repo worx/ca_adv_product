@@ -28,8 +28,6 @@ function ca_advanced_product_list_template_access_settings($form, &$form_state, 
     '#options' => array(
       'ca_advanced_product_list_template_one' => t('Template one'),
       'ca_advanced_product_list_template_one_flex' => t('Template one Flex'),
-      'ca_advanced_product_list_template_two' => t('Template two'),
-      'ca_advanced_product_list_template_two_flex' => t('Template two Flex'),
     ),
     '#required' => TRUE,
     '#default_value' => $conf['ca_advanced_product_list_template'],
@@ -48,7 +46,7 @@ function ca_advanced_product_list_template_access_settings_form($form, &$form_st
  * Check for access.
  */
 function ca_advanced_product_list_template_access_check($conf, $context) {
-  return $conf['ca_advanced_product_list_template'] == variable_get('ca_advanced_product_list_template', 'ca_advanced_product_list_template_one');
+  return $conf['ca_advanced_product_list_template'] == variable_get('ca_advanced_product_list_template', 'ca_advanced_product_list_template_one_flex');
 }
 
 /**
@@ -60,12 +58,6 @@ function ca_advanced_product_list_template_access_summary($conf, $context) {
   }
   elseif ($conf['ca_advanced_product_list_template'] == 'ca_advanced_product_list_template_one_flex') {
     $template = t('Template one Flex');
-  }
-  elseif ($conf['ca_advanced_product_list_template'] == 'ca_advanced_product_list_template_two') {
-    $template = t('Template two');
-  }
-  else {
-    $template = t('Template two Flex');
   }
 
   return t('Display template is set to: ' . $template);
